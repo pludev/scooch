@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: #24282e;
+  color: #dcdcdc;
+  font-family: 'Manrope', sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  letter-spacing: 0.025rem;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+
+  width: 100vw;
+  padding: 12px;
+  line-height: 1;
+
+  background: #1d1f20cc;
+  overflow-y: hidden;
+
+  z-index: 1000;
+}
+
+header::-webkit-scrollbar {
+  display: none;
+}
+
+header ul {
+  margin-top: 5px;
+  margin-left: 24px;
+  height: 1.2em;
+  white-space: nowrap;
+  overflow-y: scroll;
+}
+
+header li {
+  display: inline-block;
+  margin: 0 0.3rem 0 0.2rem;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+header li a {
+  color: inherit;
+}
+
+header li a.on {
+  /* border-bottom: 1px solid #8eff32 !important; */
+  color: gold;
+}
+
+header .logo {
+  width: 160px;
+}
+
+section {
+  margin: 0;
+  padding: 1em 3em;
+  overflow: hidden;
+}
+
+.divider {
+  display: block;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.divider > span {
+  display: inline-block;
+  /* border-bottom: 1px solid rgba(127, 127, 127, 0.5); */
+  width: 360px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 4rem;
+  font-weight: 200;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 1em 0 0;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 200;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 1em 0 0;
+}
+
+h3 {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 200;
+  margin: 0;
+}
+
+h4 {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 200;
+  margin: 0 0 1.5em;
+}
+
+p {
+  color: #dcdcdc;
+  font-weight: 200;
+  letter-spacing: 0.75px;
+  line-height: 1.6;
+  margin: 0.5em 0 1em 0;
+}
+
+a {
+  color: #ba94c8;
+  text-decoration: none;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.get-in-touch {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin: 1em auto 1em;
+  background: #6930ff;
+  padding: 0.5em 1em;
+  border-radius: 2em;
+}
+
+.margenBot20 {
+  margin-bottom: 20px;
+}
+
+.terciary {
+  color: #ceff1c;
+  font-weight: 600;
+}
+
+.center {
+  text-align: center;
+}
+
+.proyectos {
+  padding-left: 15%;
+  padding-right: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 650px) {
+  .proyectos {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.hero-image {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  margin-bottom: 2em;
+  height: 50vh;
+}
+
+.hero-image img {
+  display: none;
+}
+
+img.sergio {
+  float: right;
+  width: 50%;
+  margin: 1em -1em 0 -3em;
+}
+
+.social-icon {
+  margin: 0.5em;
+  opacity: 0.75;
+  width: 50px;
+}
+
+section.masthead {
+  background-color: #1d1f21;
+  background-image: url(/img/bg-header.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 900px auto;
+  padding-bottom: 0;
+}
+
+section.masthead img.hero {
+  position: absolute;
+  bottom: -100px;
+  right: -70px;
+  height: 560px;
+}
+
+section.masthead .la-gesta {
+  font-size: 80px;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+section.masthead .la-miniserie {
+  font-size: 40px;
+  margin-top: 40px;
+  color: #b88bc5;
+}
+
+section.proyecto {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+section.proyecto h3 {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+section.sergio {
+  background-color: #1b1c1d;
+  padding-top: 0;
+  padding-bottom: 4em;
+}
+
+section.romina {
+  background-color: #32363c;
+  padding-top: 2em;
+  padding-bottom: 0;
+}
+
+section.contactanos {
+  text-align: center;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+section.contactanos a.cta {
+  font-size: 64px;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgb(138, 253, 44);
+}
+
+section > div {
+  /* overflow-x: hidden; */
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (min-width: 1200px) {
+  section > div {
+    margin: 0 auto;
+    width: 900px;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+  section > div {
+    margin: 0 auto;
+    width: 800px;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 1em 1em 3em;
+  color: #f5f6fc;
+}
+
+footer img {
+  display: block;
+  width: 100%;
+  margin-bottom: 2em;
+}
