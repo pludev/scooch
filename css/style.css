@@ -265,6 +265,7 @@ footer {
   section.masthead > div {
     height: 85vh;
     min-height: 390px;
+    max-height: 700px;
   }
   section.masthead .la-gesta {
     padding-top: 1.75em;

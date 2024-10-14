@@ -6,7 +6,7 @@ $(function () {
     var target = $(this).attr('href');
     $('html, body').animate(
       {
-        scrollTop: $(target).offset().top - 10,
+        scrollTop: $(target).offset().top - 40,
       },
       400
     );
@@ -62,7 +62,7 @@ $(function () {
   $(window).scroll(function () {
     offsetTopProyectos = $('#proyectos').offset().top;
     offsetTopNosotros = $('#nosotros').offset().top;
-    offsetTopContactanos = $('#contactanos').offset().top;
+    offsetTopContactanos = $('#contactanos').offset().top - 200;
 
     if (this.scrollY < offsetTopNosotros - 200) {
       setCurrentSection('#proyectos');
