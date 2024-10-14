@@ -1,6 +1,6 @@
 $(function () {
   // scroll trigger
-  $('header li a').click(function (e) {
+  $('header a').click(function (e) {
     e.preventDefault();
     // content
     var target = $(this).attr('href');
