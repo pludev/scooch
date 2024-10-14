@@ -110,7 +110,7 @@ header {
   padding: 12px;
   line-height: 1;
 
-  background: #1d1f20cc;
+  background: #1d1f20dd;
   overflow-y: hidden;
 
   z-index: 1000;
@@ -146,6 +146,7 @@ header li a.on {
 
 header .logo {
   width: 160px;
+  cursor: pointer;
 }
 
 section {
