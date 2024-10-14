@@ -1,17 +1,103 @@
-* {
-  margin: 0;
-  padding: 0;
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  /* max-width: 100%; */
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/*
+  Elbert's Base CSS // mobile first
+*/
 html,
 body {
   background: #24282e;
   color: #dcdcdc;
   font-family: 'Manrope', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 200;
-  letter-spacing: 0.025rem;
+  letter-spacing: 0.05em;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 1.5em;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 200;
+}
+
+h4 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+p {
+  color: #dcdcdc;
+  font-weight: 200;
+  margin: 1em 0 1em 0;
+}
+
+a {
+  color: #ba94c8;
+  text-decoration: none;
 }
 
 header {
@@ -55,7 +141,6 @@ header li a {
 }
 
 header li a.on {
-  /* border-bottom: 1px solid #8eff32 !important; */
   color: gold;
 }
 
@@ -64,130 +149,16 @@ header .logo {
 }
 
 section {
-  margin: 0;
-  padding: 1em 3em;
   overflow: hidden;
 }
 
-.divider {
-  display: block;
-  text-align: center;
-  padding: 20px 0;
-}
-
-.divider > span {
-  display: inline-block;
-  /* border-bottom: 1px solid rgba(127, 127, 127, 0.5); */
-  width: 360px;
-}
-
-h1 {
-  color: #ffffff;
-  font-size: 4rem;
-  font-weight: 200;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin: 1em 0 0;
-}
-
-h2 {
-  color: #ffffff;
-  font-size: 1rem;
-  font-weight: 200;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin: 1em 0 0;
-}
-
-h3 {
-  color: #ffffff;
-  font-size: 2rem;
-  font-weight: 200;
-  margin: 0;
-}
-
-h4 {
-  color: #ffffff;
-  font-size: 1rem;
-  font-weight: 200;
-  margin: 0 0 1.5em;
-}
-
-p {
-  color: #dcdcdc;
-  font-weight: 200;
-  letter-spacing: 0.75px;
-  line-height: 1.6;
-  margin: 0.5em 0 1em 0;
-}
-
-a {
-  color: #ba94c8;
-  text-decoration: none;
-  padding-left: 2px;
-  padding-right: 2px;
-}
-
-.get-in-touch {
-  display: inline-block;
-  font-size: 1.2rem;
-  font-weight: 300;
-  margin: 1em auto 1em;
-  background: #6930ff;
-  padding: 0.5em 1em;
-  border-radius: 2em;
-}
-
-.margenBot20 {
-  margin-bottom: 20px;
-}
-
-.terciary {
-  color: #ceff1c;
-  font-weight: 600;
-}
-
-.center {
-  text-align: center;
-}
-
-.proyectos {
-  padding-left: 15%;
-  padding-right: 15%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@media screen and (max-width: 650px) {
-  .proyectos {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-
-.hero-image {
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center center;
-  margin-bottom: 2em;
-  height: 50vh;
-}
-
-.hero-image img {
-  display: none;
-}
-
-img.sergio {
-  float: right;
-  width: 50%;
-  margin: 1em -1em 0 -3em;
-}
-
-.social-icon {
-  margin: 0.5em;
-  opacity: 0.75;
-  width: 50px;
+section > div {
+  /* background: rgba(255, 255, 0, 0.1); */
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  position: relative;
 }
 
 section.masthead {
@@ -196,89 +167,206 @@ section.masthead {
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: 900px auto;
-  padding-bottom: 0;
+  padding-top: 3em;
+}
+
+section.masthead .la-gesta {
+  font-size: 4em;
+  line-height: 1.15;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+section.masthead .la-miniserie {
+  color: #b88bc5;
+  font-size: 2em;
 }
 
 section.masthead img.hero {
   position: absolute;
-  bottom: -100px;
-  right: -70px;
-  height: 560px;
+  bottom: 0;
 }
 
-section.masthead .la-gesta {
-  font-size: 80px;
-  line-height: 1.15;
-  text-transform: uppercase;
-}
-
-section.masthead .la-miniserie {
-  font-size: 40px;
-  margin-top: 40px;
-  color: #b88bc5;
-}
-
-section.proyecto {
-  padding-top: 2em;
+section.proyecto > div {
+  padding-top: 1em;
   padding-bottom: 2em;
 }
-section.proyecto h3 {
-  font-size: 20px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+
+section.proyecto h2 {
+  font-size: 1.2em;
 }
 
 section.sergio {
   background-color: #1b1c1d;
-  padding-top: 0;
-  padding-bottom: 4em;
+}
+section.sergio > div {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+section.sergio img.sergio {
+  float: right;
+  width: 46%;
+  margin: 0 -5em 0 -2em;
 }
 
 section.romina {
   background-color: #32363c;
+}
+section.romina > div {
   padding-top: 2em;
   padding-bottom: 0;
 }
 
+section.romina img.romina {
+  float: right;
+  width: 200px;
+  margin: 0 -5em 0 -2em;
+}
+
 section.contactanos {
   text-align: center;
+}
+
+section.contactanos > div {
   padding-top: 5em;
   padding-bottom: 5em;
 }
 
-section.contactanos a.cta {
-  font-size: 64px;
+section.contactanos .cta {
+  font-size: 32px;
   text-transform: uppercase;
   border-bottom: 1px solid rgb(138, 253, 44);
 }
 
-section > div {
-  /* overflow-x: hidden; */
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media screen and (min-width: 1200px) {
-  section > div {
-    margin: 0 auto;
-    width: 900px;
-  }
-}
-@media screen and (min-width: 800px) and (max-width: 1200px) {
-  section > div {
-    margin: 0 auto;
-    width: 800px;
-  }
+section.contactanos .social-icon {
+  display: inline-block;
+  margin: 0.5em;
+  opacity: 0.75;
+  width: 50px;
 }
 
 footer {
   text-align: center;
   padding: 1em 1em 3em;
   color: #f5f6fc;
+  font-size: 0.75rem;
+  opacity: 0.4;
 }
 
-footer img {
-  display: block;
-  width: 100%;
-  margin-bottom: 2em;
+/* ------- Media Queries ------- */
+
+/* phone portrait */
+@media (max-width: 767px) {
+  html,
+  body {
+    font-size: 16px;
+  }
+  section.masthead > div {
+    height: 85vh;
+    min-height: 390px;
+  }
+  section.masthead .la-gesta {
+    padding-top: 1.75em;
+    font-size: 3em;
+  }
+  section.masthead img.hero {
+    width: 420px;
+    height: auto;
+    right: -2.5em;
+    bottom: 0;
+  }
+  section.sergio > div {
+    padding-top: 2em;
+  }
+  section.sergio img.sergio {
+    margin-top: 0.5em;
+    margin-right: -6em;
+    margin-left: -1em;
+    width: 260px;
+  }
+  section.romina > div {
+    padding-top: 2em;
+  }
+  section.romina img.romina {
+    margin-top: 3em;
+    margin-right: -6em;
+    margin-left: -1em;
+    width: 240px;
+  }
+}
+
+/* ipad portrait */
+@media (min-width: 768px) {
+  html,
+  body {
+    font-size: 18px;
+  }
+  section > div {
+    width: 720px;
+    margin: 0 auto;
+  }
+  section.masthead > div {
+    height: 480px;
+  }
+  section.masthead .la-gesta {
+    padding-top: 1em;
+    font-size: 3.5em;
+  }
+  section.masthead img.hero {
+    width: auto;
+    height: 400px;
+    right: -1em;
+  }
+  section.sergio img.sergio {
+    width: 420px;
+    margin-top: -7em;
+    margin-right: -7em;
+    margin-left: -0.5em;
+  }
+  section.romina img.romina {
+    width: 428px;
+    margin-top: 2.5em;
+    margin-right: -9em;
+    margin-left: -4em;
+  }
+}
+
+/* ipad landscape | laptop */
+@media (min-width: 1020px) {
+  html,
+  body {
+    font-size: 20px;
+  }
+  section > div {
+    width: 980px;
+    margin: 0 auto;
+  }
+  section.masthead > div {
+    height: 640px;
+  }
+  section.masthead .la-gesta {
+    font-size: 4em;
+    padding-top: 0.85em;
+    margin-bottom: 3em;
+  }
+  section.masthead img.hero {
+    height: 580px;
+    right: -2.5em;
+    bottom: -1em;
+  }
+  section.sergio img.sergio {
+    width: 450px;
+    margin-right: -6em;
+    margin-left: -1em;
+  }
+  section.romina img.romina {
+    width: 440px;
+    margin-top: 1em;
+    margin-right: -7em;
+    margin-left: 0em;
+  }
+  section.contactanos .cta {
+    font-size: 64px;
+  }
 }
