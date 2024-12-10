@@ -163,38 +163,37 @@ section > div {
 }
 
 section.masthead {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #1d1f21;
   background-image: url(/img/bg-header.png);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: 900px auto;
   padding-top: 3em;
+  height: 95vh;
 }
 
-section.masthead .la-gesta {
-  font-size: 4em;
-  line-height: 1.15;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
-section.masthead .la-miniserie {
-  color: #b88bc5;
-  font-size: 2em;
-}
-
-section.masthead img.hero {
-  position: absolute;
-  bottom: 0;
+section.masthead img.lenses {
+  width: 100%;
+  margin: 100px auto;
 }
 
 section.proyecto > div {
-  padding-top: 1em;
-  padding-bottom: 2em;
+  padding-top: 3em;
+  padding-bottom: 0;
 }
 
 section.proyecto h2 {
   font-size: 1.2em;
+}
+
+section.proyecto img.trio {
+  width: 70%;
+  max-width: 600px;
+  margin: 40px auto 0;
 }
 
 section.sergio {
@@ -264,19 +263,9 @@ footer {
     font-size: 16px;
   }
   section.masthead > div {
-    height: 85vh;
+    height: 65vh;
     min-height: 390px;
     max-height: 700px;
-  }
-  section.masthead .la-gesta {
-    padding-top: 1.75em;
-    font-size: 3em;
-  }
-  section.masthead img.hero {
-    width: 420px;
-    height: auto;
-    right: -2.5em;
-    bottom: 0;
   }
   section.sergio > div {
     padding-top: 2em;
@@ -309,16 +298,11 @@ footer {
     margin: 0 auto;
   }
   section.masthead > div {
-    height: 480px;
+    height: 540px;
   }
-  section.masthead .la-gesta {
-    padding-top: 1em;
-    font-size: 3.5em;
-  }
-  section.masthead img.hero {
-    width: auto;
-    height: 400px;
-    right: -1em;
+  section.proyecto img.trio {
+    /* width: 420px; */
+    /* margin-right: 3em; */
   }
   section.sergio img.sergio {
     width: 420px;
