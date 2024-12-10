@@ -172,13 +172,14 @@ section.masthead {
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: 900px auto;
-  padding-top: 3em;
-  height: 95vh;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  /* mheight: 60vh; */
 }
 
 section.masthead img.lenses {
   width: 100%;
-  margin: 100px auto;
+  margin: 100px auto 30px;
 }
 
 section.proyecto > div {
@@ -188,12 +189,22 @@ section.proyecto > div {
 
 section.proyecto h2 {
   font-size: 1.2em;
+  margin-top: 0.25rem;
 }
 
 section.proyecto img.trio {
   width: 70%;
   max-width: 600px;
   margin: 40px auto 0;
+}
+
+section.otros-proyectos {
+  background: #1E2022;
+  background-image: url(/img/bg-header.png);
+  background-position: center bottom;
+  /* background-repeat: no-repeat; */
+  background-size: 500px auto;
+  padding: 50px 0;
 }
 
 section.sergio {
